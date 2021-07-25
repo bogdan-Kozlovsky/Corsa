@@ -1,0 +1,41 @@
+.slider {
+  @include adaptiv-value("padding-top", 30, 20, 1);
+  @include adaptiv-value("padding-bottom", 70, 40, 1);
+
+  &__items {
+    overflow: hidden;
+  }
+
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1100px;
+  }
+
+  &__item {
+    margin: 0 auto;
+  }
+
+  &__box-img {
+    height: 200px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+.swiper-button-prev {
+  left: 0px;
+  color: $accent;
+}
+.swiper-button-next {
+  right: 0px;
+  color: $accent;
+}
+@media (max-width: 600px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 25px;
+  }
+}

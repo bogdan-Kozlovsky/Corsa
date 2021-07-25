@@ -1,0 +1,77 @@
+.contact {
+  padding: 35px 0px 45px 0px;
+  background-color: #e6eef5;
+  &__content {
+  }
+
+  &__title {
+    margin: 0 auto 24px;
+    max-width: 787px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    @include adaptiv-value("font-size", 30, 18, 1);
+    @include adaptiv-value("line-height", 36, 25, 1);
+    @extend %r-b;
+  }
+
+  &__text {
+    margin: 0 auto 33px;
+    width: 100%;
+    max-width: 875px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: $black;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input {
+    border: solid 1px #d0d0d0;
+    padding: 13px 15px 11px 15px;
+    width: 213px;
+    height: 37px;
+    @include adaptiv-value("margin-right", 50, 0, 1);
+    background-color: #fff;
+    &::placeholder {
+      text-transform: uppercase;
+      color: #b9b9b9;
+      @extend %r-r;
+    }
+  }
+
+  &__btn {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 11px 26px 8px 38px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $accent;
+    transition: all 0.5s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        border: 1px solid $accent;
+        color: $accent;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    &__form {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__input {
+      display: block;
+      margin: 0 auto 15px;
+    }
+  }
+}

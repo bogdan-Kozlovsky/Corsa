@@ -1,0 +1,29 @@
+.descr {
+  @include adaptiv-value("padding-bottom", 25, 15, 1);
+  @include adaptiv-value("padding-top", 50, 35, 1);
+
+  &__title {
+    margin-bottom: 29px;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+
+  &__pagination-link {
+    position: relative;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $sem;
+    &:not(:last-child) {
+      margin-right: 3px;
+      &::after {
+        content: "/";
+        right: 0;
+      }
+    }
+  }
+}
