@@ -6,6 +6,7 @@
   font-size: 16px;
   line-height: 18px;
   @extend %r-r;
+  color: #050505;
 
   &__title {
     text-align: center;
@@ -14,6 +15,7 @@
     @include adaptiv-value("font-size", 30, 18, 1);
     @include adaptiv-value("line-height", 36, 25, 1);
     @include adaptiv-value("margin-bottom", 63, 30, 1);
+    @extend %r-b;
   }
 
   &__img {

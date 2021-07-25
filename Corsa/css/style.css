@@ -91,24 +91,23 @@ body {
 }
 
 .systems__slider-title,
+.table__title,
 .contact__title,
 .price__descr-accent,
 .price__box-num,
 .price__decor-num,
 .stock__text-bold,
+.stock__text-accent,
 .stock__procent {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
 
-.systems__title {
-  font-family: "MyriadPro", sans-serif;
-  font-weight: 400;
-}
-
+.systems__title,
 .stock__text,
 .stock__descr,
 .stock__title,
+.descr__title,
 .title {
   font-family: "MyriadPro", sans-serif;
   font-weight: 700;
@@ -119,7 +118,8 @@ body {
 .price__descr-text,
 .price__box-descr,
 .price__text,
-.price__title {
+.price__title,
+.descr__text {
   font-family: "calibri", sans-serif;
   font-weight: 400;
 }
@@ -223,9 +223,6 @@ body._lock {
 }
 
 .wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,6 +230,9 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
 }
 
 ._container {
@@ -2349,8 +2349,6 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2515,6 +2513,7 @@ body.ie ._ibg img {
   padding-bottom: 37px;
   font-size: 16px;
   line-height: 18px;
+  color: #050505;
 }
 
 .table__title {
@@ -3053,6 +3052,13 @@ body.ie ._ibg img {
 
   .select__options {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 

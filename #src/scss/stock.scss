@@ -55,6 +55,7 @@
 
   &__text-accent {
     color: $accent;
+    @extend %r-b;
   }
 
   &__text-bold {

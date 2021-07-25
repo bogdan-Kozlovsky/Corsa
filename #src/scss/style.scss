@@ -88,11 +88,11 @@ body {
 
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+	width: 100%;
+	min-height: 100%;
 	&._loaded {
 	}
 }
@@ -138,7 +138,6 @@ body {
 @import "table";
 @import "systems";
 @import "systems-descr";
-@import "footer";
 @import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 

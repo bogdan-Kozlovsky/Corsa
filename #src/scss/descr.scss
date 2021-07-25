@@ -4,6 +4,7 @@
 
   &__title {
     margin-bottom: 29px;
+    @extend %m-b;
   }
 
   &__pagination {
@@ -25,5 +26,9 @@
         right: 0;
       }
     }
+  }
+
+  &__text {
+    @extend %c-r;
   }
 }

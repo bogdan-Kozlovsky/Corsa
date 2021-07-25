@@ -3,7 +3,7 @@
   padding-bottom: 37px;
   &__inner {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 -20px;
   }
@@ -35,7 +35,13 @@
     @extend %c-r;
   }
 }
-
+@media (max-width: 900px) {
+  .about {
+    &__inner {
+      flex-wrap: wrap;
+    }
+  }
+}
 @media (max-width: 450px) {
   .about {
     &__inner {
